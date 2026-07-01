@@ -1,5 +1,6 @@
 package ar.edu.utn.frba.ddsi.climalert.models;
 
+import ar.edu.utn.frba.ddsi.climalert.domain.Medicion;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public record WeatherApiResponse(
@@ -17,8 +18,8 @@ public record WeatherApiResponse(
         public record Condition(String text) {}
     }
 
-    public WeatherDTO toDTO() {
-        return new WeatherDTO(
+    public Medicion toMedicion() {
+        return new Medicion(
                 location.name(),
                 current.temp_c(),
                 current.humidity(),
