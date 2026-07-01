@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: climalert
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 0c5c2b8099a6ca
+    password: a7d63454edde8c
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+weatherapi:
+  key: 81f403b52bc44c80a7d15553260107
+  location: Buenos Aires
+
+climalert:
+  email:
+    destinatarios: admin@clima.com,emergencias@clima.com,meteorologia@clima.com
